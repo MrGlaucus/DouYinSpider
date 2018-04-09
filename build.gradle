@@ -1,5 +1,6 @@
 buildscript {
     ext.kotlin_version = '1.2.31'
+    ext.webmagic_version = '0.7.3'
 
     repositories {
         mavenCentral()
@@ -12,7 +13,6 @@ buildscript {
 group 'com.glaucus'
 version '1.0-SNAPSHOT'
 
-apply plugin: 'java'
 apply plugin: 'kotlin'
 
 sourceCompatibility = 1.8
@@ -22,6 +22,9 @@ repositories {
 }
 
 dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile "us.codecraft:webmagic-core:$webmagic_version"
+    compile "us.codecraft:webmagic-extension:$webmagic_version"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
