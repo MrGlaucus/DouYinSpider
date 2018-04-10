@@ -29,3 +29,4 @@ crashlytics-build.properties
 fabric.properties
 .idea
 gradle
+*.iml
